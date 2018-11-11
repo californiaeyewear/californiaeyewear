@@ -1,0 +1,67 @@
+.galleryWrap
+  height: 100vh
+  background: url('../img/California2.jpeg') no-repeat center
+  background-size: cover
+.galleryContainer
+  height: 100vh
+  width: 100%
+  background-color: $transB2
+.galleryHeader
+  height: 25vh
+  width: 100%
+  background-color: transparent
+  display: grid
+  justify-grid: center
+  align-items: center
+  grid-template-columns: 1fr
+  text-align: center
+.addressDiv
+  display: flex
+  flex-direction: column
+.galleryHeaderText
+  width: 100%
+  height: 100%
+  background-color: $BGColor1
+  display: flex
+  justify-content: center
+  align-items: center
+.galleryHeader h1
+  color: black
+  font-size: 5.1rem
+  // text-align: center
+  letter-spacing: 2px
+  font-family: Raleway
+  font-weight: lighter
+.galleryBox
+  height: 75vh
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+.galleryWindow
+  height: 70%
+  width: 100%
+  // max-width: 1225px
+  background-color: $transB1
+  overflow-x: scroll
+  overflow-y: hidden
+  display: flex
+  flex-direction: row
+.galleryWindow img
+  display: inline-block
+  object-fit: contain
+  width: auto
+  height: 100%
+  padding: 5px
+.galleryWindow::-webkit-scrollbar
+  background: rgba(0,0,0,.2)
+  border-radius: 10px
+  height: 12px
+
+.galleryWindow::-webkit-scrollbar-thumb
+  background: grey
+  border-radius: 12px
+  height: 12px
+@media (max-width: 950px)
+  .addressDiv
+    display: none

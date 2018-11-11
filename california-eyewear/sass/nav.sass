@@ -1,0 +1,73 @@
+
+.navContainer header
+  position: fixed
+  width: 100%
+  display: flex
+  height: 84px
+  align-items: center
+  justify-content: space-around
+  font-family: Raleway
+  overflow-x: hidden
+.navBGON
+  background-color: rgba(0,0,0,.92)
+  transition: all .5s ease-in-out
+#navHeader
+  transition: all .5s ease-in-out
+
+.navContainer li, .navContainer ul
+  display: inline-block
+.navContainer h1
+  color: $transW1
+  font-weight: lighter
+.navContainer a
+  color: $transW1
+  text-decoration: none
+  font-size: 1.5rem
+  padding: 15px 25px
+  transition: all .25s ease-in-out
+  transition-property: background-color
+
+.navContainer a:hover
+  background-color: rgba(0,0,0,.5)
+  transition: all .25s ease-in-out
+  transition-property: background-color
+.navDropdown
+  display: none
+  height: auto
+  width: 60px
+  margin: auto
+  padding-top: 5px
+  padding-bottom: 10px
+  cursor: pointer
+.navX
+  font-size: 3.2rem
+  color: white
+  display: block
+  cursor: pointer
+  text-align: center
+  padding-top: 7px
+  padding-bottom: 8px
+.navList2
+  display: none
+  text-align: center
+.navList2 a
+  width: 100%
+@media (max-width: 950px)
+  .navContainer header
+    position: fixed
+    width: 100%
+    display: block
+    height: auto
+  .navLogo, .navList
+    display: none
+  .navDropdown
+    display: block
+  .navList
+    text-align: center
+  .navContainer li
+    // display: block
+    padding: 15px
+    width: 100%
+@media (min-width: 950px)
+  .navX, .navDropdown, .navList2 ul
+    display: none

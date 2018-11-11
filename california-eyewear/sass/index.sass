@@ -1,0 +1,65 @@
+@import 'landing'
+@import 'nav'
+@import 'about'
+@import 'gallery'
+@import 'contact'
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+footer .footerDiv
+  height: auto
+  width: 100%
+  background-color: black
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  justify-items: center
+  align-items: center
+  flex-direction: column
+footer
+  color: white
+  font-family: Raleway
+  font-weight: lighter
+  overflow-x: hidden
+
+.footerLogo
+  height: auto
+  background-color: black
+  padding: 50px
+  text-align: center
+.footerNav ul li
+  list-style: none
+.footerNav ul li a
+  list-style: none
+  color: white
+  text-decoration: none
+  font-family: Raleway
+  font-size: 1.4rem
+  line-height: 1.5
+.footerAddressDiv, .footerContactDiv
+  line-height: 2
+  font-size: 1.2rem
+.footerAddressDiv, .business
+  margin-left: -20px
+.footerCopy
+  text-align: center
+  background-color: black
+  color: white
+  padding: 50px 0 15px 0
+
+@media (max-width: 1200px)
+  footer .footerDiv
+    grid-template-columns: 1fr 1fr
+  .footerDiv div
+    padding: 20px
+    text-align: left
+    width: 100%
+@media (max-width: 620px)
+  footer .footerDiv
+    grid-template-columns: 1fr
+  .footerDiv div
+    text-align: left
+    width: 300px
+    margin: auto

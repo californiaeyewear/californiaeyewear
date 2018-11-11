@@ -1,0 +1,75 @@
+.contactWrap
+  height: auto
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+.contactContainer
+  height: auto
+  width: 85%
+  max-width: 1224px
+  background: linear-gradient(#f9fbff, #fcfcfc)
+  padding: 25px
+form
+  height: auto
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  justify-items: center
+  align-items: center
+  font-family: Raleway
+  line-height: 2
+  padding: 25px
+  font-size: 1.3rem
+form div
+  width: 100%
+  margin: auto
+.alert
+  text-align: center
+  font-family: Raleway
+  color: white
+  font-size: 1.2rem
+  margin-top: 10px
+  background-color: grey
+  width: 95%
+  margin: auto
+  padding-top: 15px
+  padding-bottom: 15px
+  box-shadow: 0 1px 15px -8px black
+  display: none
+form input, form textarea
+  display: block
+  width: 95%
+  margin: auto
+form textarea
+  height: 155px
+form input
+  margin-bottom: 20px
+  height: 25px
+.contactContainer h1
+  color: black
+  font-size: 5.1rem
+  text-align: center
+  letter-spacing: 2px
+  font-family: Raleway
+  font-weight: lighter
+button
+  font-size: 1.3rem
+  padding: 5px 50px
+  margin-top: 25px
+  font-family: Raleway
+  margin-left: 12px
+  width: 95%
+  border: none
+label
+  margin-left: 10px
+@media (max-width: 950px)
+  form
+    height: 60%
+    width: 100%
+    grid-template-columns: 1fr
+  button
+    margin-left: 15px
+@media (max-width: 650px)
+  .contactContainer
+    width: 98%
